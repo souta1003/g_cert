@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: migrate",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "migrate",
+            ],
+            "django": true,
+            "envFile": "${workspaceFolder}/.vscode/.env",
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "Python: migrations",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "makemigrations",
+            ],
+            "django": true,
+            "envFile": "${workspaceFolder}/.vscode/.env",
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "Python: runserver",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver",
+                "--noreload"
+            ],
+            "django": true,
+            "envFile": "${workspaceFolder}/.vscode/.env",
+            "console": "integratedTerminal",
+        }
+    ]
+}
